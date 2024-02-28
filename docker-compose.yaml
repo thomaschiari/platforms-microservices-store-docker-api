@@ -20,7 +20,7 @@ services:
 
   discovery:
     build:
-      context: ../platform.241.store.discovery/
+      context: ../platforms-microservices-store-discovery/
       dockerfile: Dockerfile
     container_name: store-discovery
     image: store-discovery:latest
@@ -36,7 +36,7 @@ services:
 
   account:
     build:
-      context: ../platform.241.store.account-resource/
+      context: ../platforms-microservices-store-account-resource/
       dockerfile: Dockerfile
     container_name: store-account
     image: store-account:latest
